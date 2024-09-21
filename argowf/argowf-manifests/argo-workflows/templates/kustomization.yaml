@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- controller/workflow-aggregate-roles.yaml
+- controller/workflow-controller-cluster-roles.yaml
+- controller/workflow-controller-config-map.yaml
+- controller/workflow-controller-crb.yaml
+- controller/workflow-controller-deployment.yaml
+- controller/workflow-controller-sa.yaml
+- controller/workflow-rb.yaml
+- controller/workflow-role.yaml
+- crds/argoproj.io_clusterworkflowtemplates.yaml
+- crds/argoproj.io_cronworkflows.yaml
+- crds/argoproj.io_workflowartifactgctasks.yaml
+- crds/argoproj.io_workfloweventbindings.yaml
+- crds/argoproj.io_workflows.yaml
+- crds/argoproj.io_workflowtaskresults.yaml
+- crds/argoproj.io_workflowtasksets.yaml
+- crds/argoproj.io_workflowtemplates.yaml
+- server/server-cluster-roles.yaml
+- server/server-crb.yaml
+- server/server-deployment.yaml
+- server/server-ingress.yaml
+- server/server-sa.yaml
+- server/server-service.yaml

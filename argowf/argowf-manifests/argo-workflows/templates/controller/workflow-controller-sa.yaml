@@ -1,0 +1,15 @@
+---
+# Source: argo-workflows/templates/controller/workflow-controller-sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: argo-argo-workflows-workflow-controller
+  namespace: "argowf"
+  labels:
+    helm.sh/chart: argo-workflows-0.42.2
+    app.kubernetes.io/name: argo-workflows-workflow-controller
+    app.kubernetes.io/instance: argo
+    app.kubernetes.io/component: workflow-controller
+    app: workflow-controller
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/part-of: argo-workflows
